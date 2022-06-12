@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        	  android:id="@+id/selected_device"
+        	  android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/serial_number"
+    		  android:padding="10dp" />
+    
+    <Button
+        android:id="@+id/get_reader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_reader" />
+    <Button
+        android:id="@+id/inrollnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollment" />
+
+    <Button
+        android:id="@+id/verindb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VerifyFromDB" />
+</LinearLayout>
+</ScrollView>

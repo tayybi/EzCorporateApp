@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/oopm_hold"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Hold Opportunity" />
+    <item
+        android:id="@+id/oopm_assign_new"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Assign New User" />
+    <item
+        android:id="@+id/oopm_add_new_task"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Add New Task" />
+
+    <item
+        android:id="@+id/oopm_decline"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Decline/Close Opportunity" />
+    <item
+        android:id="@+id/oopm_convert_opp"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Upgrade Stage" />
+    <item
+        android:id="@+id/oopm_forcast"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Forecast" />
+    <item
+        android:id="@+id/oopm_priority"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Priority Level" />
+    <item
+        android:id="@+id/oopm_success"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Successful" />
+
+
+
+</menu>

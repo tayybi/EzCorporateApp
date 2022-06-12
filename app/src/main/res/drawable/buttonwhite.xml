@@ -1,0 +1,55 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="@color/colorPrimaryDark"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:bottom="3dp">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="@color/colorPrimary"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryDark"/>
+        </shape>
+    </item>
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryDark"/>
+            <gradient android:startColor="@color/colorPrimary"
+                android:endColor="#fff"
+                android:angle="270"/>
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+
+<!--</selector>-->
+</layer-list>
+
+<!--&lt;!&ndash;<item&ndash;&gt;-->
+<!--&lt;!&ndash;android:bottom="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:left="-2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:right="-2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:top="-2dp">&ndash;&gt;-->
+<!--&lt;!&ndash;<shape android:shape="rectangle">&ndash;&gt;-->
+    <!--&lt;!&ndash;<stroke&ndash;&gt;-->
+        <!--&lt;!&ndash;android:width="0.5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:color="@android:color/black" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<solid android:color="#ffffff" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<stroke&ndash;&gt;-->
+        <!--&lt;!&ndash;android:width="1dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:color="#030310"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:dashGap="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:dashWidth="5dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<padding&ndash;&gt;-->
+        <!--&lt;!&ndash;android:bottom="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:left="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:right="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:top="5dp" />&ndash;&gt;-->
+<!--&lt;!&ndash;</shape>&ndash;&gt;-->
+<!--&lt;!&ndash;</item>&ndash;&gt;-->

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:layout_marginStart="25dp"
+            android:weightSum="8"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="4">
+                    <TextView
+                        android:layout_weight="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:drawablePadding="10dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:text="Enter Company URL"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:inputType="textEmailAddress"/>
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_company_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorPrimaryDark" />
+                <Button
+                    android:id="@+id/btn_companu_url_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Done"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:weightSum="15">
+
+        <LinearLayout
+            android:id="@+id/lin_set_click"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="13"
+            android:orientation="vertical"
+            android:background="@color/textclrwhite"
+            android:padding="10dp"
+            android:weightSum="10.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="3M Johar Town Lahore"
+                    android:textColor="@color/textclrblack"
+                    android:textSize="@dimen/heading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="Ahmed Ali"
+                    android:textColor="@color/back" />
+
+                <TextView
+                    android:id="@+id/tv_led_or_opp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center|right"
+                    android:text="Malik Zahid"
+                    android:textColor="@color/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_todo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="Ahmed Ali"
+                    android:textColor="@color/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dayleft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="38 Day Left"
+                    android:textColor="@color/back" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/textclrwhite"
+        android:id="@+id/lin_color"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_setting_dots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/dots" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

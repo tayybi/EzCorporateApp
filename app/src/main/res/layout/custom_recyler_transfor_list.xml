@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="8"
+        android:id="@+id/lin_set_click"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="@dimen/subheading"
+                android:text="PLOT"/>
+            <TextView
+                android:id="@+id/tv_plot_name"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/heading"
+                android:gravity="center|left"
+                android:layout_height="match_parent"
+                android:text="3M Johar Town Lahore"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center|left"
+                android:textSize="@dimen/subheading"
+                android:layout_height="match_parent"
+                android:text="FROM"/>
+            <TextView
+                android:id="@+id/tv_from_name"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Malik Zahid"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/subheading"
+                android:layout_height="match_parent"
+                android:text="TO"/>
+            <TextView
+                android:id="@+id/tv_to_name"
+                android:layout_width="0dp"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:text="Ahmed Ali"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

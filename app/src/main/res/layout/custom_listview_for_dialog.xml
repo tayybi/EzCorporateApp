@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:weightSum="16">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/subheading"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/function_title"/>
+        <ListView
+            android:id="@+id/function_list"
+            android:layout_width="match_parent"
+            android:listSelector="@color/colorPrimary"
+            android:layout_weight="12"
+            android:layout_height="0dp"></ListView>
+        <Button
+            android:id="@+id/function_ok"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:text="Ok"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/heading" />
+
+</LinearLayout>

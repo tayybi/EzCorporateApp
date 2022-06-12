@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="14"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/headingOfeditmanger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/heading" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:visibility="visible"
+            android:src="@drawable/dots" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars = "vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_margin="5dp"
+                        android:id="@+id/lv_history"
+                        android:layout_weight="12"
+                        android:layout_width="match_parent"
+                        android:divider="@null"
+                        android:layout_height="wrap_content">
+                    </ListView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/buttonsimple"
+                        android:gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_write_message"
+                            android:layout_width="0dp"
+                            android:layout_weight="6"
+                            android:paddingLeft="10dp"
+                            android:gravity="center|left"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="Write a message"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/iv_send_reassign"
+                                android:padding="7dp"
+                                android:src="@drawable/sendmessage"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

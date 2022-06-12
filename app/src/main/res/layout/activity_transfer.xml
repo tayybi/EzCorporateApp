@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="14">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+                    <ImageView
+                        android:id="@+id/go_back"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:src="@drawable/back_arrow" />
+
+                    <TextView
+                        android:id="@+id/headingOfeditmanger"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Plot Transfer"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/heading" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="9dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/back_arrow" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_agrement_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/heading"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="From" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="11"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textSize="@dimen/heading"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="From" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="6"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_transfor_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/employee"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_name_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="20dp"
+                                    android:layout_weight="3"
+                                    android:hint="nothing"/>
+                                <TextView
+                                    android:id="@+id/tv_cnic_from"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="20dp"
+                                    android:layout_weight="3"
+                                    android:hint="nothing"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Verify"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/btn_verify_from"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textSize="@dimen/heading"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="To" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="6"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:padding="3dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_transfor_to"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/employee" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_name_to"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="20dp"
+                                    android:layout_weight="3"
+                                    android:text="nothing"/>
+                                <TextView
+                                    android:id="@+id/tv_cnic_to"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="20dp"
+                                    android:layout_weight="3"
+                                    android:text="nothing"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Verify"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/button"
+                            android:id="@+id/btn_verify_to"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/don"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:layout_gravity="bottom"
+                        android:text="Transfer"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>

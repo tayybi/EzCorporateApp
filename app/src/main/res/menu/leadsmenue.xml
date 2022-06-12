@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lm_hold"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Hold Lead" />
+    <item
+        android:id="@+id/lm_assign_new"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Assign New User" />
+    <item
+        android:id="@+id/lm_add_new_task"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Add New Task" />
+
+    <item
+        android:id="@+id/lm_decline"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Decline/Close Lead" />
+
+    <item
+        android:id="@+id/lm_convert_opp"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Convert To Oppurtunity" />
+
+
+</menu>

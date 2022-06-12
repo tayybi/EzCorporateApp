@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="14">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <ImageView
+                android:id="@+id/go_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow" />
+            <TextView
+                android:id="@+id/headingOfeditmanger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Customer Verification"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/heading" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:visibility="invisible"
+                android:src="@drawable/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:orientation="vertical"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="3.5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:weightSum="10"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_searh"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:ems="10"
+                    android:hint="Find Registered Customer"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_show_customer_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:weightSum="10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/heading"
+                        android:text="Name:"/>
+
+                    <TextView
+                        android:id="@+id/tv_customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:hint="Person Name@null"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/heading"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="CNIC:"/>
+
+                    <TextView
+                        android:id="@+id/tv_customer_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:hint="Person Code@null"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.5"
+                android:weightSum="15"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center|right"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/heading"
+                    android:text="Verified"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btn_verify_customer"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="verify"
+                        android:background="@drawable/button"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+</LinearLayout>

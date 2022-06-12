@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:layout_marginStart="25dp"
+            android:weightSum="8"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:id="@+id/lin_user_password"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="User">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/mail"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="Password">
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/lock"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimaryDark" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_email_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Log in"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

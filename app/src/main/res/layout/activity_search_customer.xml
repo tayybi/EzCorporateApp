@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="14">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/headingOfeditmanger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Search Customer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/heading" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="9dp"
+            android:visibility="invisible"
+            android:src="@drawable/back_arrow" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="12"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:weightSum="14"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_show_get_customer_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_customer_cnic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="CNIC/NTR "
+                        android:inputType="phone"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_customer_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Phone No"
+                        android:inputType="phone"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/search_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:text="Search"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>

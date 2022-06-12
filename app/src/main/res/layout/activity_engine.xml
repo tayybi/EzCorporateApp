@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:weightSum="14">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@color/colorPrimary"
+		android:orientation="horizontal"
+		android:weightSum="7">
+
+		<ImageView
+			android:id="@+id/go_back"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:padding="15dp"
+			android:src="@drawable/back_arrow" />
+
+		<TextView
+			android:id="@+id/headingOfeditmanger"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="5"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textColor="@color/colorPrimaryDark"
+			android:text="BioMatric Enrollment"
+			android:textSize="@dimen/heading" />
+
+		<ImageView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:padding="9dp"
+			android:visibility="invisible"
+			android:src="@drawable/back_arrow" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="12"
+		android:orientation="vertical"
+		android:weightSum="8">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="3"
+			android:orientation="vertical"
+			android:weightSum="10"
+			android:padding="10dp" >
+
+			<TextView
+				android:textSize="@dimen/heading"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:textColor="@color/colorPrimaryDark"
+				android:text="Enroll Your Thoumb Four Time" />
+
+			<TextView
+				android:id="@+id/selected_device"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:textColor="@color/colorPrimaryDark"
+				android:text="@string/serial_number" />
+
+			<TextView
+				android:id="@+id/text"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				android:layout_gravity="center"
+				android:textSize="@dimen/heading"
+				android:textColor="@color/colorPrimaryDark"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:layout_width="wrap_content" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:gravity="center"
+			android:layout_weight="5"
+			android:orientation="vertical"
+			android:padding="10dp" >
+			<ImageView
+				android:id="@+id/bitmap_image"
+				android:layout_width="190dp"
+				android:layout_height="190dp"
+				android:padding="10dp" />
+
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="bottom"
+		android:orientation="vertical">
+
+		<Button
+			android:id="@+id/done_bio_verif"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorPrimary"
+			android:layout_gravity="bottom"
+			android:textColor="@color/colorPrimaryDark"
+			android:text="Done" />
+	</LinearLayout>
+</LinearLayout>
